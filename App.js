@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { StatusBar } from "expo-status-bar";
+
 import {
 	Keyboard,
 	KeyboardAvoidingView,
@@ -57,9 +58,10 @@ export default function App() {
 				behavior={Platform.OS === "ios" ? "padding" : "height"}
 				style={styles.writeTaskWrapper}
 			>
+
 				<TextInput
 					style={styles.input}
-					placeholder={"Write a task"}
+					placeholder={"Write a task..."}
 					value={task}
 					onChangeText={text => setTask(text)}
 				/>
